@@ -6,10 +6,14 @@ You can run multiple containers within a single image. To get started, pull the 
 
 ```sh
 docker pull postgres:12-alpine
+```
 
 Then, run the container:
 
+```sh
 docker exec -it <container_name> /bin/sh
+```
+
 
 ## 2. Managing Your Database with PostgreSQL
 Schema migration is an essential task that often needs to be performed throughout the application's lifetime 
