@@ -1,0 +1,46 @@
+# PART 1
+
+#### Cours 1 
+
+* Note: 
+- A docker container is run in separate virtual network, which is different from the host network that we are on
+so basically we cannot simply connect to the postgres server 
+
+* Tasks: 
+- Install Docker Desktop
+- Install Table Plus 
+Table plus is a GUI tool can talk to many databse engine
+- Run Postgres container
+- Creat database schema 
+
+
+* Syntax
+
+Pull Image:       docker pull <image>:<tag> (tag : version)
+Start container:  docker run -- name <container_name>
+                             -e      <enviroment_var>
+                             -p      <host_port:container_ports>
+                             -d      <images>:<tag>
+
+Run command in container : docker exec -it <container_name_or_id> <command>  [args]
+View container logs      : docker logs <container_name_or_id>
+
+
+#### Cours 2
+* Note: 
+- DB migration, how to write and run database migration in Golang
+- Up/down migration, the up-script is run to make a forward change to the schema
+                     the down-script is run if we want to revert the change by the up-script
+
+* Task 
+- Installed db migrate
+
+
+* Syntax:
+- start/stop container : docker start/stop <container_name>
+
+#### Cours 3
+
+
+
+
